@@ -1,20 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Mi Proyecto Angular</a>
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/inicio">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/acerca">Acerca de</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contacto">Contacto</a>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">   
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">Mi logo</a>
+
+    <!-- Enlaces -->
+    <div class="d-flex">
+      <a class="nav-link mx-2" routerLink="/inicio">Inicio</a>
+      <a class="nav-link mx-2" routerLink="/acerca">Acerca de</a>
+      <a class="nav-link mx-2" routerLink="/contacto">Contacto</a>
+    </div>
   </div>
 </nav>
-<div class="container mt-4">
-  <router-outlet></router-outlet>
-</div>
-
