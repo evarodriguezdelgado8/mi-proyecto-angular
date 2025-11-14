@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AcercaComponent {
 
+  numero1: number = 10;
+  numero2: number = 20; 
+
 }
