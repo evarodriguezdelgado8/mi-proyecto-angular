@@ -1,4 +1,21 @@
-{{ numero1 + numero2 }}
+<p>Mi contador</p>
+<button (click)="incrementar()" class="btn btn-primary">Incrementar</button>
+<button (click)="decrementar()" class="btn btn-primary">Decrementar</button>
+<p>Contador: {{ contador }}</p>
+
+<input id="Nombre" (input)="actualizarTexto($event)">
+<p>{{resultado}}</p>
+
+<label for="opciones">Selecciona una opción:</label>
+<select id="opciones" (change)="actualizarOpcion($event)">
+<option value="Opción 1">Opción 1</option>
+<option value="Opción 2">Opción 2</option>
+<option value="Opción 3">Opción 3</option>
+</select>
+<p>Opción seleccionada: {{ opcionSeleccionada }}</p>
+
+
+
 <section class="py-5">
   <div class="container">
     <div class="row align-items-center">

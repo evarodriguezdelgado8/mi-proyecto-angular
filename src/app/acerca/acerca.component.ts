@@ -7,7 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AcercaComponent {
 
-  numero1: number = 10;
-  numero2: number = 20; 
+  contador: number = 0;
+  resultado: string="";
 
+  incrementar() {
+    this.contador++;
+  }
+
+  decrementar() {
+    this.contador--;
+  }
+
+  actualizarTexto(evento: Event) {
+    const inputElement = evento.target as HTMLInputElement;
+    this.resultado = inputElement.value;
+  }
+
+  opcionSeleccionada: string = '';
+  actualizarOpcion(evento: Event) {
+    const selectElement = evento.target as HTMLSelectElement;
+    this.opcionSeleccionada = selectElement.value;
+  }
+    
+    
 }
